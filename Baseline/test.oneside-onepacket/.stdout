@@ -1,0 +1,6 @@
+New connection, [orig_h=192.168.4.149, orig_p=49422/tcp, resp_h=23.92.19.75, resp_p=443/tcp], 
+Connection established, [orig_h=192.168.4.149, orig_p=49422/tcp, resp_h=23.92.19.75, resp_p=443/tcp], Sh
+Client hello, [orig_h=192.168.4.149, orig_p=49422/tcp, resp_h=23.92.19.75, resp_p=443/tcp], ShAD
+Content gap, [orig_h=192.168.4.149, orig_p=49422/tcp, resp_h=23.92.19.75, resp_p=443/tcp], ShAD, F
+Content gap, [orig_h=192.168.4.149, orig_p=49422/tcp, resp_h=23.92.19.75, resp_p=443/tcp], ShAD, F
+Connection state remove, [orig_h=192.168.4.149, orig_p=49422/tcp, resp_h=23.92.19.75, resp_p=443/tcp], ShADF

@@ -1,0 +1,58 @@
+# @TEST-EXEC: bro -C -r $TRACES/ecdsa-cert-source-only.pcap %INPUT
+# @TEST-EXEC: btest-diff ssl.log
+# @TEST-EXEC: btest-diff .stdout
+
+event ssl_client_hello(c: connection, version: count, possible_ts: time, client_random: string, session_id: string, ciphers: index_vec)
+	{
+	print "Client hello", c$id, c$history;
+	}
+
+event ssl_extension_server_name(c: connection, is_orig: bool, names: string_vec)
+	{
+	print "Server name", c$id, c$history;
+	}
+
+event ssl_server_hello(c: connection, version: count, possible_ts: time, server_random: string, session_id: string, cipher: count, comp_method: count)
+	{
+	print "Server hello", c$id, c$history;
+	}
+
+event ssl_established(c: connection)
+	{
+	print "Established", c$id, c$history;
+	}
+
+event ssl_alert(c: connection, is_orig: bool, level: count, desc: count)
+	{
+	print "Alert", c$id, c$history;
+	}
+
+event content_gap(c: connection, is_orig: bool, seq: count, length: count)
+	{
+	print "Content gap", c$id, c$history, is_orig;
+	}
+
+event ssl_change_cipher_spec(c: connection, is_orig: bool)
+	{
+	print "CCS", c$id, c$history, is_orig;
+	}
+
+event connection_established(c: connection)
+	{
+	print "Connection established", c$id, c$history;
+	}
+
+event connection_state_remove(c: connection)
+	{
+	print "Connection state remove", c$id, c$history;
+	}
+
+event new_connection(c: connection)
+	{
+	print "New connection", c$id, c$history;
+	}
+
+event conn_weird(name: string, c: connection, addl: string)
+	{
+	print "Connection weird", c$id, c$history, name, addl;
+	}

@@ -1,0 +1,6 @@
+New connection, [orig_h=192.168.4.149, orig_p=49422/tcp, resp_h=23.92.19.75, resp_p=443/tcp], 
+Connection weird, [orig_h=192.168.4.149, orig_p=49422/tcp, resp_h=23.92.19.75, resp_p=443/tcp], SA, possible_split_routing, 
+Connection weird, [orig_h=192.168.4.149, orig_p=49422/tcp, resp_h=23.92.19.75, resp_p=443/tcp], SAD, data_before_established, 
+Connection weird, [orig_h=192.168.4.149, orig_p=49422/tcp, resp_h=23.92.19.75, resp_p=443/tcp], SAD, data_before_established, 
+Connection weird, [orig_h=192.168.4.149, orig_p=49422/tcp, resp_h=23.92.19.75, resp_p=443/tcp], SADF, inappropriate_FIN, 
+Connection state remove, [orig_h=192.168.4.149, orig_p=49422/tcp, resp_h=23.92.19.75, resp_p=443/tcp], SADF

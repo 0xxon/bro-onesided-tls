@@ -1,0 +1,10 @@
+New connection, [orig_h=192.168.4.149, orig_p=49422/tcp, resp_h=23.92.19.75, resp_p=443/tcp], ^h
+Connection weird, [orig_h=192.168.4.149, orig_p=49422/tcp, resp_h=23.92.19.75, resp_p=443/tcp], ^h, unsolicited_SYN_response, 
+Connection established, [orig_h=192.168.4.149, orig_p=49422/tcp, resp_h=23.92.19.75, resp_p=443/tcp], ^h
+Server hello, [orig_h=192.168.4.149, orig_p=49422/tcp, resp_h=23.92.19.75, resp_p=443/tcp], ^had
+Certificate, CN=pantz.org,OU=PositiveSSL,OU=Domain Control Validated
+File state remove
+Certificate, CN=COMODO ECC Domain Validation Secure Server CA,O=COMODO CA Limited,L=Salford,ST=Greater Manchester,C=GB
+File state remove
+CCS, [orig_h=192.168.4.149, orig_p=49422/tcp, resp_h=23.92.19.75, resp_p=443/tcp], ^had, F
+Connection state remove, [orig_h=192.168.4.149, orig_p=49422/tcp, resp_h=23.92.19.75, resp_p=443/tcp], ^hadf

@@ -1,0 +1,7 @@
+This directory contains test that check the behavior of Bro when exposed to
+unidirectional TLS traffic. Test cases use the standard testing framework
+used for Bro; use btest (https://www.bro.org/sphinx/components/btest/README.html)
+to run the test.
+
+Test results are positive, parsing one-sided TLS connections with Bro works as long
+as no other problems (like re-ordered packets) occur.
